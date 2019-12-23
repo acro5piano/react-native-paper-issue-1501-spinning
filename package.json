@@ -7,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "build": "cross-env NODE_ENV=production webpack",
+    "watch": "nodemon",
+    "try": "webpack; serve -s build"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.7.4",
@@ -19,8 +21,10 @@
     "@types/react": "^16.9.16",
     "@types/react-native": "^0.60.25",
     "babel-loader": "^8.0.6",
+    "cross-env": "^6.0.3",
     "file-loader": "^5.0.2",
     "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -28,6 +32,7 @@
     "react-native-paper": "^3.3.0",
     "react-native-vector-icons": "^6.6.0",
     "react-native-web": "^0.11.7",
+    "serve": "^11.2.0",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.3",
     "webpack": "^4.41.2",

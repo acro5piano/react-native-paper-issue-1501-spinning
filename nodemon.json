@@ -1,0 +1,6 @@
+{
+  "watch": ["src"],
+  "ext": "ts,tsx,html",
+  "ignore": [],
+  "exec": "yarn try"
+}
